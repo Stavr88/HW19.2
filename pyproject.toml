@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hw19-2"
+version = "0.1.0"
+description = ""
+authors = ["Yura Sarvas <grey-matter88@mail.ru>"]
+readme = "README.md"
+packages = [{include = "hw19"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
