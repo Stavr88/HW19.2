@@ -46,13 +46,26 @@ class Product(models.Model):
         help_text="Загрузите фото продукта",
     )
     category = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, blank=True, null=True, related_name='category'
+        Category,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        related_name='category'
     )
     price_pay = models.IntegerField(
-        blank=True, null=True, verbose_name="Цена за покупку", help_text="Введите цену"
+        blank=True,
+        null=True,
+        verbose_name="Цена за покупку",
+        help_text="Введите цену"
     )
     created_at = models.DateTimeField(verbose_name="Дата создания записи", help_text="Введите дату")
     updated_at = models.DateTimeField(verbose_name="Дата изменения записи", help_text="Введите дату")
+    manufactured_at = models.DateTimeField(
+        verbose_name="Дата производства продукта",
+        help_text="Введите дату",
+        blank=True,
+        null=True
+    )
 
     class Meta:
         verbose_name = "Продукт"
@@ -61,4 +74,3 @@ class Product(models.Model):
 
     def __str__(self):
         return {self.name, self.category}
-
