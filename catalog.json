@@ -1,0 +1,42 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+        "name": "молочка",
+        "description": "много лактозы и витаминов, полезна детям"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+        "name": "полуфабрикаты",
+        "description": "фабричное изделие из съедобных игредиентов"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+        "name": "фрукты",
+        "description": "российские фрукты с краснодара"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+        "name": "овощи",
+        "description": "с огорода, натуральный продукт"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+        "name": "111",
+        "description": ""
+    }
+}
+]

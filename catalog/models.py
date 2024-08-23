@@ -59,12 +59,13 @@ class Product(models.Model):
         help_text="Введите цену"
     )
     created_at = models.DateTimeField(verbose_name="Дата создания записи", help_text="Введите дату")
-    updated_at = models.DateTimeField(verbose_name="Дата изменения записи", help_text="Введите дату")
+    updated_at = models.DateTimeField(
+        verbose_name="Дата изменения записи",
+        help_text="Введите дату"
+    )
     manufactured_at = models.DateTimeField(
         verbose_name="Дата производства продукта",
         help_text="Введите дату",
-        blank=True,
-        null=True
     )
 
     class Meta:
