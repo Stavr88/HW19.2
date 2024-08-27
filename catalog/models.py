@@ -74,4 +74,4 @@ class Product(models.Model):
         ordering = ["name", "price_pay"]
 
     def __str__(self):
-        return {self.name, self.category}
+        return f'{self.name}, {self.category}'
